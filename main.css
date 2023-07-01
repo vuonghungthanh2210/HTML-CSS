@@ -1,0 +1,81 @@
+#first-heading {
+    color: red;
+}
+.second-heading {
+    color: blue;
+    font-size: 20px;
+}
+:root {
+    --text-color: violet;
+}
+h1 {
+    --my-color: green;
+    color: var(--my-color);
+}
+h2 {
+    color: var(--text-color);
+}
+h3 {
+     color: var(--text-color);
+}
+.boxx {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+.box {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    background-color: #333;
+    margin-left: 20px;
+}
+
+.box2 {
+    background-color: orange;
+    margin-left: 50px;
+}
+.box3 {
+    background-color: firebrick;
+    padding: 10px 12px 8px 6px;
+    border: 10px solid #333 ;
+    margin: 10px 20px 15px 12px; 
+}
+html, body {
+    margin: 0;
+}
+.boxxx {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background-color: darkorchid;
+    padding: 16px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+
+}
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px dashed rgb(87, 236, 19);
+    background-clip: content-box;
+}
+.headers {
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(0, rgba(255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+    url(https://th.bing.com/th/id/R.8af3615f3ebf3c9a1acf889e871ae3cd?rik=asNLglbKfuLgkw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar%2fstar_PNG41531.png&ehk=8h7gwpYLPHrTmrEj1BmN%2bBRm3t4wJFy5ajFYTUd9By8%3d&risl=&pid=ImgRaw&r=0),
+    url(https://scr.vn/wp-content/uploads/2020/07/H%C3%ACnh-Avt-Anime-ng%E1%BA%A7u.png);
+    background-size: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
