@@ -1,0 +1,60 @@
+- BEM (Block - Element - Modifier)
+    - Ý nghĩa:
+        - Block: Khối
+        - Element: Thành phần trong khối
+        - Modifier: Bổ sung ý nghĩa cho block hoặc element (viết thêm 1 class, để bổ sung ý nghĩa)
+    - Cú pháp
+        - .block
+        - .block__element
+        - .block—modifier
+        - .block__element—modifier
+        
+        > Nếu có nhiều block lồng nhau, có thể tách các block con, cháu thành block độc lập. Ví dụ:
+        .header
+        ⇒ .navbar
+        ⇒ header-search (⇒ header-search__input, header-search__btn)
+        >
+ # BEM
+  - Là tiêu chuẩn đặt tên class khi viết CSS
+
+ ## Ý nghĩa:
+ - Viết tắt của: Block Element Modifier
+ - Block: Khối
+ - Elenment: Thành phần trong khối
+ - Modifier: Bổ sung ý nghĩa cho 'Block' hoặc 'Element'
+
+ ## Tại sao lại dùng BEM?
+ - Mỗi người đặt một kiểu
+ - MEnbers đặt class trùng nhau, CSS đè lên nhau
+
+ ## CÚ pháp
+ - .block
+ - .block__element
+
+ - .block--modifier
+ - .block__element--modifier
+        
+ ## TÍnh ứng dụng
+ - Xây đựng layout website
+ - Xây dựng thành phần trên website
+
+ ## Ưu điểm
+ - Tính rõ ràng
+ - Tái sử dụng dễ dàng
+ - Giúp cả team làm việc với nhau dễ dàng
+ - Tính module, không lo CSS của class này ảnh hưởng lên CSS của  class khác
+
+ ## NHược điểm
+ - Tên class dài
+ - Mốt số người cho là xấu
+
+ ## Khi nào dùng BEM là PHÙ HỢP?
+ - Dự án nhiều members
+ - Dự án lớn, số kượng pages nhiều hoặc số lượng các thành phần trên giao diện nhiều
+
+ ## Thực hành
+ - Làm button
+        - Enabled: Pointer, hover effect
+        -Disabled: Arrow, no effect
+ - Kàm message
+ - làm 1 thành phần trên website

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <link rel="stylesheet" href="/Toast massages.css">
+    <link rel="stylesheet" href="/Button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="toast">
+    <div>
+        <!-- Success -->
+        <div class="toast toast--success">
+            <div class="toast__icon">
+                <i class="fa-solid fa-circle-check"></i>
+                 </div>
+            <div class="toast__body">
+                <h3 class="toast__title">Success</h3>
+                <p class="toast__massage">Vương Hưng Thành</p>
+            </div>
+        <div class="toast__close">
+            <i class="fas fa-times"></i>
+        </div>
+        </div>
+        <div onclick="showSuccessToast();" class="btn btn--success">Show success toast</div>
+        <div onclick="showErrorToast();" class="btn btn--danger">Show error toast</div>
+    </div>
+    <script>
+        function showSuccessToast() {
+          toast({
+            title: "Thành công!",
+            message: "Bạn đã đăng ký thành công tài khoản tại F8.",
+            type: "success",
+            duration: 5000
+          });
+        }
+      
+        function showErrorToast() {
+          toast({
+            title: "Thất bại!",
+            message: "Có lỗi xảy ra, vui lòng liên hệ quản trị viên.",
+            type: "error",
+            duration: 5000
+          });
+        }
+      </script>
+</body>
+</html>
